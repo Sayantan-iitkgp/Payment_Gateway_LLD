@@ -71,9 +71,9 @@ flowchart TD
   A[Payment Controller] --> B[Payment Service]
   B --> C{Select Gateway}
   C --> D[Gateway Factory]
-  D --> E[Payment Gateway]\n(Paytm/Razorpay/Proxy)
+  D --> E[Payment Gateway: Paytm/Razorpay/Proxy]
   B --> F{Select Banking System}
-  F --> G[Banking System]\n(Paytm/Razorpay)
+  F --> G[Banking System: Paytm/Razorpay]
   E --> H[Process Payment]
   G --> H
 ```
